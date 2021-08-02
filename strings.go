@@ -8,3 +8,12 @@ func Reverse(s string) string {
 	}
 	return result
 }
+
+// Count function returns a number of symbols in the string
+func Count(s string) int {
+	count := 0
+	for range s {
+		count++
+	}
+	return count
+}
