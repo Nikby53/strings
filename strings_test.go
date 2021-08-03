@@ -23,12 +23,10 @@ func TestReverse(t *testing.T) {
 }
 
 func TestCount(t *testing.T) {
-	t.Run("success", func(t *testing.T) {
-		word := "Hello"
-		expected := 5
-		actual := Count(word)
-		if actual != expected {
-			t.Errorf("Expected %v instead of %v", expected, actual)
-		}
-	})
+	word := "Hello"
+	expected := 5
+	actual := Count(word)
+	if actual != expected {
+		t.Errorf("Expected %v instead of %v", expected, actual)
+	}
 }
