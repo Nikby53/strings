@@ -1,3 +1,4 @@
+// Package strings implements simple functions to manipulate with strings
 package strings
 
 // Reverse function reverses a string
