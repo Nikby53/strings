@@ -1,5 +1,5 @@
-module awesomeProject
+module github.com/Nikby53/string-utils
 
 go 1.16
 
-require github.com/golangci/golangci-lint v1.41.1 // indirect
+
