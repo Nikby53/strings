@@ -21,3 +21,23 @@ func TestReverse(t *testing.T) {
 		})
 	}
 }
+
+func TestCount(t *testing.T) {
+	var tests = []struct {
+		in   string
+		exp  int
+		name string
+	}{
+		{"Hello", 5, "Count"},
+		{"", 0, "Empty"},
+		{"🧡💛®®", 4, "non-ASCII"},
+	}
+	for _, e := range tests {
+		t.Run(e.name, func(t *testing.T) {
+			res := Count(e.in)
+			if res != e.exp {
+				t.Errorf("Expected %v instead of %v", e.exp, res)
+			}
+		})
+	}
+}
