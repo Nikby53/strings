@@ -16,7 +16,7 @@ func TestReverse(t *testing.T) {
 		t.Run(e.name, func(t *testing.T) {
 			res := Reverse(e.in)
 			if res != e.exp {
-				t.Errorf("Expected %v instead of %v", e.exp, e.in)
+				t.Errorf("Expected %q instead of %q", e.exp, res)
 			}
 		})
 	}
